@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NexAllot - Seating Arrangement</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 20px; }
+    .classroom { display: grid; grid-template-columns: repeat(8, 1fr); gap: 10px; padding: 20px; justify-items: center; }
+    .bench {
+      width: 100px; height: 60px;
+      background-color: #e0f7fa;
+      border: 2px solid #00838f;
+      border-radius: 8px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      padding: 5px;
+    }
+    .label { font-size: 14px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Seating Arrangement</h1>
+  <div class="classroom" id="classroom"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>

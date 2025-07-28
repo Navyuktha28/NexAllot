@@ -1,0 +1,16 @@
+const classroom = document.getElementById('classroom');
+
+// 4 rows × 8 benches = 32 benches
+for (let i = 0; i < 32; i++) {
+  const benchNum = i + 1;
+  const bench = document.createElement('div');
+  bench.className = 'bench';
+  bench.innerHTML = `
+    <div class="label">Bench ${benchNum}</div>
+    <div>
+      <span>1L</span> &nbsp;&nbsp;&nbsp;&nbsp; <span>1R</span><br>
+      <span>2L</span> &nbsp;&nbsp;&nbsp;&nbsp; <span>2R</span>
+    </div>
+  `;
+  classroom.appendChild(bench);
+}
